@@ -24,4 +24,14 @@ public class ShapeTest {
         assertEquals(72.0, rhombus.area(), 0);
         assertEquals("Shape: Rhombus\nArea: 72.0\nPerimeter: 36.0", rhombus.toString());
     }
+
+    @Test
+    public void testCircle() { // test case for the Circle class
+        Circle circle = new Circle("Circle", 10);
+        assertEquals("Circle", circle.getName());
+        assertEquals(10.0, circle.getRadius(), 0);
+        assertEquals(62.83, circle.perimeter(), 0);
+        assertEquals(314.15, circle.area(), 0);
+        assertEquals("Shape: Circle\nArea: 314.15\nPerimeter: 62.83", circle.toString());
+    }
 }
