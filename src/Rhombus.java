@@ -30,12 +30,14 @@ public class Rhombus extends Shape {
 
     @Override
     public double area() { // implementation of the abstract method area from the Shape class
-        return side * height;
+        double area = side * height; // calculate the area of the rhombus
+        area = Math.round(area * 100.0) / 100.0; // round the area to two decimal places
+        return area; // return the area
     }
 
     @Override
     public double perimeter() { // implementation of the abstract method perimeter from the Shape class
-        return side*4;
+        return 4 * side; // calculate the perimeter of the rhombus
     }
 
     @Override

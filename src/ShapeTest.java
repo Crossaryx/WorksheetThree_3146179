@@ -46,19 +46,19 @@ public class ShapeTest {
         // Add two instances of each subclass
         shapes.add(new Circle("Circle-1", 20));
         shapes.add(new Circle("Circle-2", 30));
-        shapes.add(new RightAngledTriangle("Right Angled Triangle-1", 8, 6));
+        shapes.add(new RightAngledTriangle("Right Angled Triangle-1", 7.3, 8.9));
         shapes.add(new RightAngledTriangle("Right Angled Triangle-2", 3, 4));
         shapes.add(new Rhombus("Rhombus-1", 10.3, 12));
         shapes.add(new Rhombus("Rhombus-2", 5, 4));
 
         // a 2d array that holds the expected values for the area and perimeter of each shape
         double[][] expVal = {
-                {1256.64, 125.66}, // Circle1
-                {2827.43, 188.50}, // Circle2
-                {24.0, 24.0},      // Right Angled Triangle1
-                {6.0, 12.0},       // Right Angled Triangle2
-                {123.6, 41.2},      // Rhombus1
-                {20.0, 20.0}       // Rhombus2
+                {1256.64, 125.66},
+                {2827.43, 188.50},
+                {32.485, 27.71},
+                {6.0, 12.0},
+                {123.6, 41.2},
+                {20.0, 20.0}
         };
 
         // we loop through the shaped list, looking up the expected values and comparing them to the actual values

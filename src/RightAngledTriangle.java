@@ -35,7 +35,10 @@ public class RightAngledTriangle extends Shape {
 
     @Override
     public double perimeter() { // implementation of the abstract method perimeter from the Shape class
-        return leg1 + leg2 + Math.sqrt(leg1 * leg1 + leg2 * leg2);
+        double hypotenuse = Math.sqrt(Math.pow(leg1, 2) + Math.pow(leg2, 2)); // calculate the hypotenuse of the right-angled triangle
+        double perimeter = leg1 + leg2 + hypotenuse;
+        perimeter = Math.round(perimeter * 100.0) / 100.0; // round the perimeter to two decimal places
+        return perimeter;
     }
 
     @Override
