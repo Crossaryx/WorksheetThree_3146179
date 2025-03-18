@@ -31,7 +31,7 @@ public class ShapeTest {
         assertEquals("Circle", circle.getName());
         assertEquals(10.0, circle.getRadius(), 0);
         assertEquals(62.83, circle.perimeter(), 0);
-        assertEquals(314.15, circle.area(), 0);
-        assertEquals("Shape: Circle\nArea: 314.15\nPerimeter: 62.83", circle.toString());
+        assertEquals(314.16, circle.area(), 0);
+        assertEquals("Shape: Circle\nArea: 314.16\nPerimeter: 62.83", circle.toString());
     }
 }

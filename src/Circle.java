@@ -20,12 +20,16 @@ public class Circle extends Shape {
 
     @Override
     public double area() { // implementation of the abstract method area from the Shape class
-        return 0;
+        double area = Math.PI * Math.pow(radius, 2); // calculate the area of the circle
+        area = Math.round(area * 100.0) / 100.0; // round the area to two decimal places
+        return area; // return the area
     }
 
     @Override
     public double perimeter() { // implementation of the abstract method perimeter from the Shape class
-        return 0;
+        double perimeter = 2 * Math.PI * radius; // calculate the perimeter of the circle
+        perimeter = Math.round(perimeter * 100.0) / 100.0; // round the perimeter to two decimal places
+        return perimeter; // return the perimeter
     }
 
     @Override
