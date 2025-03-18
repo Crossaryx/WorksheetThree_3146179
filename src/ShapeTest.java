@@ -13,4 +13,15 @@ public class ShapeTest {
         assertEquals(24.0, rightAngledTriangle.area(), 0);
         assertEquals("Shape: Right Angled Triangle\nArea: 24.0\nPerimeter: 24.0", rightAngledTriangle.toString());
     }
+
+    @Test
+    public void testRhombus() { // test case for the Rhombus class
+        Rhombus rhombus = new Rhombus("Rhombus", 9, 8);
+        assertEquals("Rhombus", rhombus.getName());
+        assertEquals(9.0, rhombus.getSide(), 0);
+        assertEquals(8.0, rhombus.getHeight(), 0);
+        assertEquals(36.0, rhombus.perimeter(), 0);
+        assertEquals(72.0, rhombus.area(), 0);
+        assertEquals("Shape: Rhombus\nArea: 72.0\nPerimeter: 36.0", rhombus.toString());
+    }
 }
