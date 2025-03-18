@@ -30,12 +30,12 @@ public class RightAngledTriangle extends Shape {
 
     @Override
     public double area() { // implementation of the abstract method area from the Shape class
-        return 0.0;
+        return leg1 * leg2 / 2;
     }
 
     @Override
     public double perimeter() { // implementation of the abstract method perimeter from the Shape class
-        return 0.0;
+        return leg1 + leg2 + Math.sqrt(leg1 * leg1 + leg2 * leg2);
     }
 
     @Override
