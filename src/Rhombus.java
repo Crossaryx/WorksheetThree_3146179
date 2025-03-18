@@ -30,12 +30,12 @@ public class Rhombus extends Shape {
 
     @Override
     public double area() { // implementation of the abstract method area from the Shape class
-        return 0.0;
+        return side * height;
     }
 
     @Override
     public double perimeter() { // implementation of the abstract method perimeter from the Shape class
-        return 0.0;
+        return side*4;
     }
 
     @Override
